@@ -1,0 +1,69 @@
+.posts {
+    padding-left: 20px;
+  }
+  
+  .n {
+    border-radius: 10px;
+  }
+  
+  .me {
+    text-align: center;
+    padding: 30px;
+    border-bottom: 10px solid white;
+  }
+  
+  .me p {
+    font-size: 40px;
+  }
+  
+  .input {
+    outline: none;
+    background: none;
+    border: none;
+    color: white;
+    border-bottom: 1px solid gray;
+    transform-origin: left;
+    transition: 0.2s;
+  }
+  
+  .posts input::placeholder {
+    color: white;
+  }
+  
+  .nmini {
+    width: 60px;
+    border-radius: 10px;
+    height: 60px;
+    object-fit: cover;
+    margin: 10px;
+  }
+  
+  .post span {
+    vertical-align: top;
+    margin-top: 20px;
+    display: inline-block;
+  }
+  
+  .input:focus{
+    border-bottom: 2px solid white;
+  }
+  .posts button{
+    margin-left: 10px;
+    outline: none;
+    padding: 5px 10px;
+    border-radius: 100px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background: white;
+    border: 3px solid black;
+  }
+  .posts button:active{
+    background: black;
+    color: white;
+  }
+  .posts p{
+    margin: 0px;
+    margin-bottom: 20px;
+  }
+  .post{
+    margin: 15px 0px;
+  }

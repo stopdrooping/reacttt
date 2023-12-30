@@ -1,0 +1,59 @@
+.dialogues {
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.message {
+    color: white;
+    margin: 15px auto;
+}
+
+.sendmessage button {
+    margin-left: 10px;
+    outline: none;
+    padding: 5px 10px;
+    border-radius: 100px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background: white;
+    border: 3px solid black;
+    width: 40%;
+}
+
+.dialogues input::placeholder {
+    color: white;
+}
+
+.sendmessage {
+    display: flex;
+    justify-content: flex-start;
+    padding: 15px;
+}
+
+.sendmessage button:active {
+    background: black;
+    color: white;
+}
+
+.message:hover {}
+
+.dialog {
+    width: 50%;
+}
+
+.user a{
+    text-decoration: none;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.user{
+    margin: 15px auto;
+    text-align: left;
+    padding: 0px 30px;
+}
+
+.messages {
+    width: 50%;
+}

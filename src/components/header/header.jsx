@@ -1,6 +1,6 @@
 import React from "react";
 import "./header.css"
-import logo from "../../img/15-02-2020_rickowens_drkshdwpentagramleveltee_chalkwhiteblack_du20s5250-rnep6-11009_mo_3.jpg"
+import logo from "../../img/Rick-Owens-Logo.png"
 function Header(){
     return(
         <div className="header">

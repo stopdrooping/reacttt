@@ -2,9 +2,10 @@
     display: block;
     padding: 10px;
     border-radius: 10px;
+    text-decoration: none;
+    color: white;
 }
 
 .navbar a:hover {
     background-color: blueviolet;
-
 }

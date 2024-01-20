@@ -71,3 +71,10 @@
 .post {
   margin: 15px 0px;
 }
+.fa-gibon:hover{
+    color: white;
+    transition: 0.5s;
+}
+.fa-gibon{
+  
+}

@@ -1,17 +1,24 @@
 import React from "react";
 import Post from "./post/post";
-function Posts(){
-    return(
+
+let postText = React.createRef();
+
+function Posts(props) {
+    let addPost = ()=>{
+        props.addPost(postText.current.value);
+    }
+    return (
         <div className="posts">
-                <h1>
-                    Комментарии:    
-                </h1>
-                <input className="input" placeholder="Введите комментарий"/>
-                <button>Добавить</button>
-                <Post message="first coemment" name="@rickowens"/>
-                <Post message="dafsadjfas" name="@sdwekns"/>
-                <Post message="n" name="@kmll"/>
-            </div>
+            <h1>
+                Комментарии:
+            </h1>
+            
+            <input ref={postText} className="input" placeholder="Введите комментарий" />
+            <button onClick={addPost}>Добавить</button>
+            {props.postsData.map((e) =>
+                <Post name={e.name} id={e.id} text={e.text} likes={e.likes} />
+            )}
+        </div>
     )
 }
 export default Posts

@@ -2,11 +2,11 @@ import React from "react";
 import "./profile.css";
 import Posts from "./posts/posts";
 import Profileme from "./profile.me/profileme";
-function Profile(){
+function Profile(props){
     return(
         <div className="profile">
             <Profileme/>
-            <Posts/>
+            <Posts postsData={props.postsData} addPost={props.addPost}/>
         </div>
     )
 }

@@ -8,15 +8,19 @@ import { BrowserRouter } from 'react-router-dom';
 import { Route } from 'react-router-dom';
 import { Switch } from 'react-router-dom';
 
-function App() {
+function App(props) {
   return (
     <div className="wrapper">
         <Header/>
-        <Navbar/>
+        <Navbar friends={props.state.friends}/>
         <Switch>
-          <Route exact path="/" component={Profile}/>
-          <Route exact path="/profile" component={Profile}/>
-          <Route exact path="/dialogues" component={Dialogues}/>
+          <Route exact path="/" render={()=><Profile postsData={
+            props.state.postsData} addPost={props.addPost}/>}/>
+          <Route exact path="/profile" render={()=><Profile postsData={
+            props.state.postsData} addPost={props.addPost}/>}/>
+          <Route exact path="/dialogues" render={()=><Dialogues messageItems={
+            props.state.messageItems} dialogNames={props.state.dialogNames}
+            addMessage={props.addMessage}/>}/>
         </Switch>
     </div>
 
